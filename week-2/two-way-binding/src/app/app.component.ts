@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
           <input class="form-control" type="text" 
                  placeholder="Enter your name here"
                  [(ngModel)]="name">
-          <button class="btn btn-primary form-control" (click)="name=''">Clear Name</button>
+          <button class="btn btn-success form-control" (click)="name=''">Clear Name</button>
       </div>
       <div class="form-group">
           <p class="alert-success">Welcome to two-way binding, {{name}}! </p>
@@ -22,6 +22,10 @@ import { Component } from '@angular/core';
     `
       .two-way-form {
         width: 50%; 
+      }
+      button{
+        margin-top:20px;
+        width:200px;
       }
     `
   ]
