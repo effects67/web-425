@@ -1,7 +1,7 @@
 export interface User {
     id: number;
     name: string;
-    pricePerPound: string;
-    quantity: string;
+    pricePerPound: number;
+    quantity: number;
   }
   

@@ -20,8 +20,9 @@ import {FormControl} from "@angular/forms";
         <a class="nav-link" href="#">Contact</a>
       </li>
     </ul>
+    
   </nav><br /><br />
-  
+  <div class="jumbotron"> 
     <div class="container">
       <div class="row">
         <div class="col">
@@ -37,6 +38,7 @@ import {FormControl} from "@angular/forms";
           </div>  
         </div>
       </div>
+    </div>
 
       <br /><br />
       <div class="row">
@@ -49,8 +51,15 @@ import {FormControl} from "@angular/forms";
   styles: [`
     .txt-bold {
       font-weight: bold;
+      background-color:lightgreen;
+      border: 1px solid darkgreen;
     }
-    
+
+    .jumbotron{
+      margin: 0 auto;
+      width: 500px;
+      background-color:rgb(153,50,204, .4);
+    }
   `]
 })
 export class AppComponent {

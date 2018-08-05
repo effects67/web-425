@@ -10,10 +10,10 @@ import {UserService} from "./user.service";
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2>Fruits</h2>
+          <h2>Fruit List</h2>
           <ul>
             <li *ngFor="let user of users | async">
-              {{ user.name }}
+            {{ user.ID }} {{ user.name }} {{ user.pricePerPound }} {{ user.quantity }}
             </li>
           </ul>
         </div>
