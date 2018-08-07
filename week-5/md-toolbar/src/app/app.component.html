@@ -1,20 +1,87 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<mat-toolbar class="menu" role="header" color="primary">
+  <mat-toolbar-row>
+    <button mat-button class="toolbar__icon-button mat-button">
+      <mat-icon>web</mat-icon>
+      <span style="margin-left: 5px !important;">425</span>
+    </button>
+    <button mat-button class="mat-button">
+      About
+    </button>
+    <button mat-button class="mat-button">
+      Contact Us
+    </button>
+
+    <button mat-button class="mat-button">
+        <a class="md" href="https://github.com/effects67/web-425">GitHub</a>
+      </button>
+
+    <div fxFlex></div>
+
+    <!-- User Profile -->
+    <button class="toolbar__icon-button" [matMenuTriggerFor]="menu" mat-icon-button>
+      <mat-icon>Account</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" style="padding-right: 100px">
+      <button mat-menu-item>
+        <mat-icon>Profile</mat-icon>
+        <span>My Profile</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>Settings</mat-icon>
+        <span>Change settings here</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>Logout</mat-icon>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="emotions">Hi, how are you feeling?</button>
+      <mat-menu #emotions="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="Happy">Happy</button>
+        <button mat-menu-item [matMenuTriggerFor]="Sad">Sad</button>
+        <button mat-menu-item [matMenuTriggerFor]="Angry">Angry</button>
+        <button mat-menu-item [matMenuTriggerFor]="Bored">Bored</button>
+      </mat-menu>
+
+        <mat-menu #Happy="matMenu">
+          <button mat-menu-item [matMenuTriggerFor]="why0">Why?</button>
+        </mat-menu>
+          <mat-menu #why0="matMenu">
+            <button mat-menu-item>Because I love Angular!</button>
+          </mat-menu>
+
+        <mat-menu #Sad="matMenu">
+          <button mat-menu-item [matMenuTriggerFor]="why1">Why?</button>
+        </mat-menu>
+          <mat-menu #why1="matMenu">
+            <button mat-menu-item>Because Angular is too hard!</button>
+          </mat-menu>
+
+        <mat-menu #Angry="matMenu">
+          <button mat-menu-item [matMenuTriggerFor]="why2">Why?</button>
+        </mat-menu>
+          <mat-menu #why2="matMenu">
+            <button mat-menu-item>Because I hate Angular!</button>
+          </mat-menu>
+
+        <mat-menu #Bored="matMenu">
+          <button mat-menu-item [matMenuTriggerFor]="why3">Why?</button>
+        </mat-menu>
+          <mat-menu #why3="matMenu">
+            <button mat-menu-item [matMenuTriggerFor]="try">Because Angular is too easy.</button>
+          </mat-menu>
+          <mat-menu #try="matMenu">
+            <button mat-menu-item>
+              <a class="md" href="https://mdbootstrap.com/angular/">Try Angular MD</a>
+            </button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<div class="wrapper">
+  <h2>Hello Material Design!</h2>
+  <br>
+  <p>Using material modules to create buttons/menus/toolbar </p>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
 

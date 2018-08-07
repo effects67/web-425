@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {User} from "./user";
-import {Observable} from "rxjs";
+import {Observable} from "rxjs/Observable";
 import 'rxjs/add/observable/of';
 
 @Injectable()

@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { OrderComponent } from './order/order.component';
+import {MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule} from "@angular/material";
+import {FlexLayoutModule} from "@angular/flex-layout";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+
 
 @NgModule({
   declarations: [
@@ -10,7 +14,13 @@ import { OrderComponent } from './order/order.component';
     OrderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatMenuModule,
+    MatToolbarModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
