@@ -1,40 +1,29 @@
-<mat-toolbar class="menu" role="header" color="primary">
-  <mat-toolbar-row>
-    <button mat-button class="toolbar__icon-button mat-button">
-      <mat-icon>web</mat-icon>
-      <span style="margin-left: 5px !important;">WEB 425</span>
-    </button>
-    <button mat-button class="mat-button">
-      About
-    </button>
-    <button mat-button class="mat-button">
-      Contact Us
-    </button>
 
-    <div fxFlex></div>
 
-    <!-- User Profile -->
-    <button class="toolbar__icon-button" [matMenuTriggerFor]="menu" mat-icon-button>
-      <mat-icon>Account</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu" style="padding-right: 100px">
-      <button mat-menu-item>
-        <mat-icon>Profile</mat-icon>
-        <span>My Profile</span>
-      </button>
-      <button mat-menu-item>
-        <mat-icon>Settings</mat-icon>
-        <span>Change settings here</span>
-      </button>
-      <button mat-menu-item>
-        <mat-icon>Logout</mat-icon>
-        <span>Logout</span>
-      </button>
-    </mat-menu>
-  </mat-toolbar-row>
-</mat-toolbar>
+<!--start sidenav-->
+
+
+<main-nav>
+
+
+<!--END side nav-->
+
+<!--start login -->
+<div class="wrapper" fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="center" fxLayoutWrap fxLayoutGap="0.5%">
+<mat-card>
+  <h2 style="text-align:center">Buy Stock</h2>
+  <input type="text" placeholder="Enter stock (e.g. AAPL)" (change)="onChangeEvent($event)" > <hr>
+  <app-order [stockSymbol]="stock" [quantity]="numberOfShares"></app-order>
+</mat-card>
+</div>
 
 
 
-<input type="text" placeholder="Enter stock symbol (e.g. AAPL)" (change)="onChangeEvent($event)" >
-<app-order [stockSymbol]="stock" [quantity]="numberOfShares"></app-order>
+
+  
+</main-nav>
+
+
+
+<!--END sign in APPLICATION-->
+

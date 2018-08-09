@@ -6,12 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Input Properties Example';
-
-  stock: string;
-  readonly numberOfShares = 100;
-
-  onChangeEvent({ target }): void {
-    this.stock = target.value;
-  }
+  title = 'app';
 }

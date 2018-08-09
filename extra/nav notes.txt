@@ -1,0 +1,22 @@
+how to make good nav
+
+
+ng new file-name-here
+
+npm install @angular/material --save
+npm install @angular/cdk --save
+npm install @angular/animations –save
+npm install @angular/flex-layout
+
+*BIG ONE*
+
+ng generate @angular/material:material-nav --name="main-nav"
+
+good modules to have (inside ts)
+
+BrowserAnimationsModule
+MatButtonModule
+MatIconModule
+MatMenuModule
+MatToolbarModule
+FlexLayoutModule

@@ -2,17 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import {MatButtonModule, MatCardModule, MatFormFieldModule, MatIconModule, MatInputModule, MatMenuModule, MatToolbarModule, MatSidenavModule, MatListModule} from "@angular/material";
 import {FlexLayoutModule} from "@angular/flex-layout";
-
-import {MatButtonModule, MatCardModule, MatFormFieldModule, MatInputModule, MatToolbarModule, MatIconModule, MatMenuModule} from "@angular/material";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import { SideNavComponent } from './side-nav/side-nav.component';
+import { MainNavComponent } from './main-nav/main-nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SideNavComponent
+    MainNavComponent,
   ],
   imports: [
     BrowserModule,
@@ -20,11 +20,14 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     MatCardModule,
     MatButtonModule,
     MatIconModule,
+    MatInputModule,
     MatMenuModule,
     MatToolbarModule,
     MatFormFieldModule,
-    MatInputModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    LayoutModule,
+    MatSidenavModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

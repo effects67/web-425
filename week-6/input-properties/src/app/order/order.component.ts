@@ -6,7 +6,9 @@ import {Component, Input, OnInit} from '@angular/core';
     <span *ngIf="!!stockSymbol">Buying {{quantity}} shares of {{stockSymbol}}</span>
   `,
   styles: [`
-    :host { background: cyan; }
+    :host { font-weight: bold;
+            background:limegreen;
+    }
   `]
 })
 export class OrderComponent implements OnInit {
