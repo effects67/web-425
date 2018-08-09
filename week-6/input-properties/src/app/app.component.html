@@ -9,10 +9,14 @@
 <!--END side nav-->
 
 <!--start login -->
-<div class="wrapper" fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="center" fxLayoutWrap fxLayoutGap="0.5%">
+<div class="wrapper" fxLayout="column" fxLayoutGap="10px" 
+fxLayoutAlign="center" fxLayoutWrap fxLayoutGap="0.5%">
 <mat-card>
   <h2 style="text-align:center">Buy Stock</h2>
-  <input type="text" placeholder="Enter stock (e.g. AAPL)" (change)="onChangeEvent($event)" > <hr>
+  <input type="text" placeholder="Enter stock (e.g. AAPL)" (change)="onChangeEvent($event)" max-width = 100%> </mat-card>
+  
+  <mat-card>
+  <h2 style="text-align:center">Confirm</h2>
   <app-order [stockSymbol]="stock" [quantity]="numberOfShares"></app-order>
 </mat-card>
 </div>
