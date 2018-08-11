@@ -2,15 +2,34 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import {MatButtonModule, MatCardModule, MatFormFieldModule, MatIconModule, MatInputModule, MatMenuModule, MatToolbarModule, MatSidenavModule, MatListModule} from "@angular/material";
+import {FlexLayoutModule} from "@angular/flex-layout";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { MainNavComponent } from './main-nav/main-nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
 import { PriceQuoteComponent } from './price-quote/price-quote.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    PriceQuoteComponent
+    MainNavComponent,
+    PriceQuoteComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatIconModule,
+    MatInputModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatFormFieldModule,
+    FlexLayoutModule,
+    LayoutModule,
+    MatSidenavModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
