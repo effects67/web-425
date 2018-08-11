@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-}
+  title = 'onChange() Example';
+
+  stock: string;
+  readonly numberOfShares = 100;
+
+  myGreeting = 'red';
+  myUser: { name: string } = { name: 'blue'}
+  }
+
