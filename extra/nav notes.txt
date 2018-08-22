@@ -14,7 +14,7 @@ ng generate @angular/material:material-nav --name="main-nav"
 
 good modules to have (inside ts)
 
-BrowserModule,
+    BrowserModule,
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
