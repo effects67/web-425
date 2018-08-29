@@ -33,3 +33,11 @@
   border: 1px solid #555;
 }
 
+
+.error {
+    color: red;
+  }
+  .hasError {
+    border: 1px solid red;
+  }
+  
