@@ -7,6 +7,10 @@ ng new angular-tour-of-heroes
 
 cd to file, then serve with "ng serve --open"
 
+//if workspace loaded
+npm install --save--dev @angular/cli@latest
+
+
 app.component.ts - TS component class code
 .html - component template written in html
 .css - private CSS style

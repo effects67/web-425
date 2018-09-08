@@ -1,0 +1,23 @@
+{
+  "name": "web-425",
+  "version": "1.0.0",
+  "description": "angular",
+  "main": "index.js",
+  "dependencies": {
+    "angular-bootstrap-md": "^6.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/effects67/web-425.git"
+  },
+  "author": "Gabriel Vance",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/effects67/web-425/issues"
+  },
+  "homepage": "https://github.com/effects67/web-425#readme"
+}

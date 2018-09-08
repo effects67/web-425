@@ -28,3 +28,29 @@ good modules to have (inside ts)
     MatSidenavModule,
     MatListModule,
     FormsModule,
+
+
+
+
+//also update src/style.css
+@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+
+
+html,body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+}
+
+.md{
+   color:white;
+   text-decoration: none;
+}
+
+
+
+//update index.html
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
