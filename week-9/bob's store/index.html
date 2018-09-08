@@ -8,10 +8,145 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Bob's Repair Shop</title>
   </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
   <body>
-    <h1>Hello, world!</h1>
+      <div class="container">
+            <h1>Bob's Repair Shop</h1>
+      </div>
+    
+    <div class="container">
+            <div class="jumbotron">
+                    <h3>Services</h3>
+                       <form>
+                       
+                           <div class="form-check">
+                               <input class="form-check-input" type="checkbox" value="30.99" id="defaultCheck1">
+                               <label class="form-check-label" for="defaultCheck1">
+                               Password reset ($30.99)
+                               </label>
+                           </div>
+               
+                           <div class="form-check">
+                               <input class="form-check-input" type="checkbox" value="99.99" id="defaultCheck2">
+                               <label class="form-check-label" for="defaultCheck2">
+                               Spyware Removal ($99.99)
+                               </label>
+                           </div>
+               
+                           <div class="form-check">
+                               <input class="form-check-input" type="checkbox" value="129.99" id="defaultCheck3">
+                               <label class="form-check-label" for="defaultCheck3">
+                               RAM Upgrade ($129.99)
+                               </label>
+                           </div>
+               
+                           <div class="form-check">
+                               <input class="form-check-input" type="checkbox" value="49.99" id="defaultCheck4">
+                               <label class="form-check-label" for="defaultCheck4">
+                               Software Installation ($49.99)
+                               </label>
+                           </div>
+               
+                           <div class="form-check">
+                               <input class="form-check-input" type="checkbox" value="89.99" id="defaultCheck5">
+                               <label class="form-check-label" for="defaultCheck5">
+                               Tune-up ($89.99)
+                               </label>
+                           </div>
+               
+                           <div class="form-check">
+                               <input class="form-check-input" type="checkbox" value="45.00" id="defaultCheck6">
+                               <label class="form-check-label" for="defaultCheck6">
+                               Keyboard Cleaning ($45.00)
+                               </label>
+                           </div>
+               
+                           <div class="form-check">
+                               <input class="form-check-input" type="checkbox" value="149.99" id="defaultCheck7">
+                               <label class="form-check-label" for="defaultCheck7">
+                              Disk Clean-up ($149.99)
+                               </label>
+                           </div>
+                           
+                           <button type="submit" onclick="calculateFunction()" class="btn btn-primary">Add to Cart</button>
+               
+                           <hr>
+                           <h3>
+                               Standard Fees
+                           </h3>
+               
+                           <div class="form-group">
+                                   <label for="parts">Parts</label>
+                                   <input class="form-control" id="partsForm" placeholder="Enter Value...">
+                           </div>
+               
+                           <div class="form-group">
+                                   <label for="labor">Labor</label>
+                                   <input class="form-control" id="laborForm" placeholder="Hours of Labor @ $50.00">
+                           </div>
+                       </form>
+                   </div>
+    </div>
+    
+    
+    
+
+    <script>
+
+        cost=0;
+
+        password=0;
+        spyware=0;
+        ram=0;
+        software=0;
+        tuneup=0;
+        keyboard=0;
+        cleanup=0;
+        
+
+        function calculateFunction() {
+            if(document.getElementById("defaultCheck1").checked){
+                cost+=39.99;
+                password+=1;
+            }
+            if(document.getElementById("defaultCheck2").checked){
+                cost+=99.99;
+                spyware+=1;
+            }
+            if(document.getElementById("defaultCheck3").checked){
+                cost+=129.99;
+                ram+=1;
+            }
+            if(document.getElementById("defaultCheck4").checked){
+                cost+=49.99;
+                software+=1;
+            }
+            if(document.getElementById("defaultCheck5").checked){
+                cost+=89.99;
+                tuneup+=1;
+            }
+            if(document.getElementById("defaultCheck6").checked){
+                cost+=45.00;
+                keyboard+=1;
+            }
+            if(document.getElementById("defaultCheck7").checked){
+                cost+=149.99;
+                cleanup+=1;
+            }
+            
+            alert("Total cost is $" + cost + ". \n" + 
+            password + "x Password Reset" + " \n" + spyware + "x Spyware Removed" + " \n" +
+            ram + "x RAM Upgrade" + " \n" + software + "x Software Installation" + " \n" +
+            tuneup + "x Tune-up" + " \n" + keyboard + "x Keyboard Cleaning" + " \n" + cleanup + "x Disk Clean-up");
+            
+        }
+        
+        
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
