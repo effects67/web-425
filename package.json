@@ -4,6 +4,7 @@
   "description": "angular",
   "main": "index.js",
   "dependencies": {
+    "@angular/material": "^6.4.7",
     "angular-bootstrap-md": "^6.2.1"
   },
   "devDependencies": {},

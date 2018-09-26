@@ -4,13 +4,18 @@ how to make good nav
 ng new file-name-here
 
 npm install @angular/material --save
+
+//CHANGE TO FILENAME
 npm install @angular/cdk --save
 npm install @angular/animations --save
 npm install @angular/flex-layout
+npm install @angular-devkit/schematics
 
 *BIG ONE*
 
 ng generate @angular/material:material-nav --name="main-nav"
+
+also, serve from this directory
 
 good modules to have (inside ts)
 

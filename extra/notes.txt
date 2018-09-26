@@ -67,3 +67,24 @@ body, input[text], button {
 // create components with "ng generate component heroes"
 // creates new folder with 3 files (TS,html,css)
 
+
+
+
+mongo schema bring back user mLab hard coded data @ web-340, repository fms project create fruit model snippets.
+?query parameter ID thru. query. need collection with test results, mapping between the 2 is user ID
+
+
+
+nested array, questions. 3 collections, tests - user ID, tests save
+
+
+
+user ID collection - ID firstname lastname
+test collection "test":"1", name"web-231", questions :q1 "what are prortypes", "answers 1"
+.
+question 1. in normal application content is driven thru database. wanted to add more tests, go into quiz add new questions/answers
+
+
+this week focus on DB diagram, create ORD, create noSQL, create stuff....for unit test?
+
+from web-340 tests with jasmin/mocha. test function. test template document w/ pass fail.
