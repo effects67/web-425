@@ -11,6 +11,8 @@ npm install @angular/animations --save
 npm install @angular/flex-layout
 npm install @angular-devkit/schematics
 
+npm install @angular/cdk @angular/animations @angular/flex-layout @angular-devkit/schematics --save
+
 *BIG ONE*
 
 ng generate @angular/material:material-nav --name="main-nav"
